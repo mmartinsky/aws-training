@@ -1,56 +1,36 @@
-# AWS Training
+# AWS Learning Sandbox 🚀
 
-This repository contains various AWS service challenges and examples, organized using Bun workspaces. These challenges are generated using Generative AI to provide practical, hands-on learning experiences with AWS services.
+A workspace to learn the basics of some foundational AWS services that I don't typically use day to day. 
 
-## Structure
+To generate the challenges, I use Gen AI to help create test scripts with various workflows, and then a script with placeholder functions for me to then implement with the help of the AWS docs.
 
-- `sqs/` - Amazon Simple Queue Service (SQS) challenge
-  - Producer and consumer implementations
-  - Environment configuration for SQS queue
-  - `challenge-template.ts` - Template file for implementing new challenges
+If you're interested in leveraging this, each folder has a `challenge-template.ts` without the solution code.
 
-## Challenge Template
+## What's Inside 📦
 
-Each service challenge includes a template file (`challenge-template.ts`) that provides:
-- The required interface and class structure
-- Method signatures with TypeScript types
-- JSDoc comments explaining each method's purpose
-- TODO comments for implementation guidance
+Folders:
+- `sqs/` - Amazon Simple Queue Service (SQS)
+  - Playing around with producer and consumer implementations
 
-To implement a new challenge:
-1. Copy the template file to a new file (e.g., `challenge.ts`)
-2. Implement the required methods following the TODO comments
-3. Test your implementation using the validation scripts
+## Getting Started 🚀
 
-## Getting Started
-
-1. Install Bun if you haven't already
-2. Install dependencies:
+If you want to try these challenges yourself:
+1. Make sure you have Bun installed
+2. Install the dependencies at the root:
    ```bash
    bun install
    ```
-3. Navigate to the specific service directory to run scripts.
+3. Jump into any service directory to start playing around
 
-## Workspace Management
+### Adding New Services
 
-This repository uses Bun workspaces to manage dependencies across different services. Each service is a separate package under the `@aws-training` scope.
-
-### Adding a New Service
-
-1. Create a new directory for the service
-2. Create a `package.json` with the name `@aws-training/<service-name>`
+When I want to add a new service:
+1. Create a new directory for it
+2. Set up a `package.json` with the name `@aws-training/<service-name>`
 3. Add the directory to the `workspaces` array in the root `package.json`
 
-## Requirements
+## What You'll Need 🛠️
 
 - Bun
-- AWS CLI configured with appropriate credentials
-- AWS account with necessary permissions
-
-## Security Note
-
-This repository uses `.env` files for configuration. Make sure to never commit sensitive credentials or environment variables. The `.gitignore` file is configured to prevent this.
-
-## License
-
-MIT 
+- AWS CLI with your credentials set up
+- An AWS account with the right permissions

@@ -1,0 +1,16 @@
+{
+  "name": "@aws-training/step-functions",
+  "version": "1.0.0",
+  "description": "AWS Step Functions Challenge",
+  "main": "validate.ts",
+  "scripts": {
+    "validate": "bun run validate.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-sfn": "^3.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "bun-types": "^1.0.0"
+  }
+} 

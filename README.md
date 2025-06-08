@@ -11,6 +11,7 @@ If you're interested in leveraging this, each folder has a `challenge-template.t
 Folders:
 - `sqs/` - Amazon Simple Queue Service (SQS)
   - Playing around with producer and consumer implementations
+- `step-functions/` - Amazon Step Functions
 
 ## Getting Started 🚀
 
